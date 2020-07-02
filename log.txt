@@ -1,0 +1,12 @@
+::[1;37mINFO[1;m Downloading mirrors from repo.manjaro.org
+::[1;37mINFO[1;m User generated mirror list
+::------------------------------------------------------------[1;m
+::[1;37mINFO[1;m Custom mirror file saved: /var/lib/pacman-mirrors/custom-mirrors.json
+::[1;37mINFO[1;m Using custom mirror file
+::[1;37mINFO[1;m Querying mirrors - This may take some time
+  ..... Brazil         : https://www.caco.ic.unicamp.br/manjaro/  [1;32m0.147[1;m
+::[1;37mINFO[1;m Writing mirror list
+::Brazil          : https://www.caco.ic.unicamp.br/manjaro/stable/$repo/$arch[1;m
+::[1;37mINFO[1;m Mirror list generated and saved to: /etc/pacman.d/mirrorlist
+::[1;37mINFO[1;m To reset custom mirrorlist 'sudo pacman-mirrors -id'
+::[1;37mINFO[1;m To remove custom config run  'sudo pacman-mirrors -c all'
