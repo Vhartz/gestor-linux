@@ -134,8 +134,8 @@ def janela_decisão_resolução():
 
     top = Toplevel(root)
     top.geometry("180x90")
-    bt_s = Button(top, text='Sim', command=s).place(x = 10, y= 10)
-    bt_n = Button(top, text='Não', command=n).place(x = 100, y= 10)
+    bt_s = Button(top, text='Sim', command = s).place(x = 10, y= 10)
+    bt_n = Button(top, text='Não', command = n).place(x = 100, y= 10)
     copiar_xinit = Label(top, text='Setar .xinitrc ?', font='bold').place(x = 10, y=60)
     top.mainloop()  
 
@@ -159,23 +159,23 @@ def janela_decisão_repositorios():
 
     top = Toplevel(root)
     top.geometry("180x90")
-    bt_s = Button(top, text='Sim', command=s).place(x = 10, y= 10)
-    bt_n = Button(top, text='Não', command=n).place(x = 100, y= 10)
-    copiar_xinit = Label(top, text='Gerar log?', font='bold').place(x = 10, y=60)
+    bt_s = Button(top, text='Sim', command = s).place(x = 10, y= 10)
+    bt_n = Button(top, text='Não', command = n).place(x = 100, y= 10)
+    copiar_xinit = Label(top, text='Gerar log?', font='bold').place(x = 10, y = 60)
     top.mainloop()  
 
 # menu e itens do menu
 menu_bar = Menu(root, font='bold')
 menu_principal = Menu(menu_bar, tearoff=0, font='bold')
 menu_principal.add_command(label='Backup')
-menu_principal.add_command(label='Abrir diretorio dos Scripts', command=thunar)
-menu_principal.add_command(label='Sobre', command=sobre)
+menu_principal.add_command(label='Abrir diretorio dos Scripts', command = thunar)
+menu_principal.add_command(label='Sobre', command = sobre)
 menu_principal.add_separator()
-menu_principal.add_command(label='Sair', command=sair)
+menu_principal.add_command(label='Sair', command = sair)
 menu_bar.add_cascade(label='Menu', menu=menu_principal)
 root.config(menu=menu_bar)
 
-botao_gerador = Button(root, text='Gerador de Senha', command=gerado_senha).place(x = 10, y = 20)
+botao_gerador = Button(root, text='Gerador de Senha', command = gerado_senha).place(x = 10, y = 20)
 
 tamanho_senha = Label(root, text='Tamanho da Senha ', font='bold').place(x = 170, y = 22)
 
@@ -184,15 +184,15 @@ opçao_gerador = Scale(
                      ).place(x= 350, y = 15)
 
 boao_atualizar_repos = Button(
-                             root, text='Atualizar Repositorios', command=janela_decisão_repositorios
-                             ).place(x = 10,y = 60)
+                             root, text='Atualizar Repositorios', command = janela_decisão_repositorios
+                             ).place(x = 10, y = 60)
 
-rmv_arch_btn = Button(root, text='Remover block Pacman', command=rmv_blk_arch).place(x = 10, y = 100)
+rmv_arch_btn = Button(root, text='Remover block Pacman', command = rmv_blk_arch).place(x = 10, y = 100)
 
-rmv_deb_btn = Button(root, text='Remover block APT-GET', command=rmv_blk_debian).place(x = 250, y = 100)
+rmv_deb_btn = Button(root, text='Remover block APT-GET', command = rmv_blk_debian).place(x = 250, y = 100)
 
-setar_hora = Button(root, text='Acertar Hora no Manjaro', command=setar_hora_manjaro).place(x = 10, y = 150)
+setar_hora = Button(root, text='Acertar Hora no Manjaro', command = setar_hora_manjaro).place(x = 10, y = 150)
 
-setar_resolução_btn = Button(root, text='Setar Resolução ', command=janela_decisão_resolução).place(x = 10, y = 180)
+setar_resolução_btn = Button(root, text='Setar Resolução ', command = janela_decisão_resolução).place(x = 10, y = 180)
 
 root.mainloop()
